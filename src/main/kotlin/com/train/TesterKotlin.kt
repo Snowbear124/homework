@@ -16,7 +16,7 @@ fun main() {
 class Train() {
     fun TotalTickets(totalTicket: Int, roundTicket: Int): Int {
         var ticketFare = ((totalTicket - roundTicket) * 1000
-                + (roundTicket * 2000) * 0.9)
+                + (roundTicket * 2000) * 0.9);
         println("Total ticket: $totalTicket")
         println("Round-trip: $roundTicket")
         println("Total: ${ticketFare.toInt()}")

@@ -15,6 +15,5 @@ public class Tester {
         System.out.println("Total tickets:\t" + total_ticket);
         System.out.println("Round-trip:\t" + round_ticket);
         System.out.println("Total\t" + (int)ticketfare);
-
     }
 }
