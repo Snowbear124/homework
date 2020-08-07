@@ -5,21 +5,21 @@ import java.util.*
 fun main() {
     var scanner = Scanner(System.`in`)
     print("Please enter number of tickets: ")
-    var total_ticket = scanner.nextInt();
+    var totalTicket = scanner.nextInt();
     print("How many round-trip tickets: ")
-    var round_ticket = scanner.nextInt();
+    var roundTicket = scanner.nextInt();
 
-    var train_ticket = Train()
-    train_ticket.TotalTickets(total_ticket, round_ticket)
+    var trainTicket = Train()
+    trainTicket.TotalTickets(totalTicket, roundTicket)
 }
 
 class Train() {
-    fun TotalTickets(total_ticket: Int, round_ticket: Int): Int {
-        var ticketfare = ((total_ticket - round_ticket) * 1000
-                + (round_ticket * 2000) * 0.9)
-        println("Total ticket: $total_ticket")
-        println("Round-trip: $round_ticket")
-        println("Total: ${ticketfare.toInt()}")
-        return ticketfare.toInt()
+    fun TotalTickets(totalTicket: Int, roundTicket: Int): Int {
+        var ticketFare = ((totalTicket - roundTicket) * 1000
+                + (roundTicket * 2000) * 0.9)
+        println("Total ticket: $totalTicket")
+        println("Round-trip: $roundTicket")
+        println("Total: ${ticketFare.toInt()}")
+        return ticketFare.toInt()
     }
 }
