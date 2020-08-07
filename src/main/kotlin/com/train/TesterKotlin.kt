@@ -7,7 +7,7 @@ fun main() {
     print("Please enter number of tickets: ")
     var totalTicket = scanner.nextInt();
     print("How many round-trip tickets: ")
-    var roundTicket = scanner.nextInt();
+    var roundTicket = scanner.nextInt()
 
     var trainTicket = Train()
     trainTicket.TotalTickets(totalTicket, roundTicket)
