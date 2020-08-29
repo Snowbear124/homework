@@ -4,13 +4,20 @@ import java.util.*
 
 fun main() {
     var scanner = Scanner(System.`in`)
-    print("Please enter number of tickets: ")
-    var totalTicket = scanner.nextInt();
-    print("How many round-trip tickets: ")
-    var roundTicket = scanner.nextInt()
 
-    var trainTicket = Train()
-    trainTicket.TotalTickets(totalTicket, roundTicket)
+    while (true) {
+        print("Please enter number of tickets: ")
+        var totalTicket = scanner.nextInt();
+
+        if (totalTicket == -1) break
+
+        print("How many round-trip tickets: ")
+        var roundTicket = scanner.nextInt()
+
+        var trainTicket = Train()
+        trainTicket.TotalTickets(totalTicket, roundTicket)
+
+    }
 }
 
 class Train() {
@@ -19,7 +26,7 @@ class Train() {
                 + (roundTicket * 2000) * 0.9);
         println("Total ticket: $totalTicket")
         println("Round-trip: $roundTicket")
-        println("Total: ${ticketFare.toInt()}")
+        println("Total: ${ticketFare.toInt()}\n")
         return ticketFare.toInt()
     }
 }
